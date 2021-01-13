@@ -291,10 +291,6 @@ export default ({ data }) => {
               </p>
               <p className="mt-2 text-xl font-light leading-relaxed">
                 Imagined as a personalized news aggregator allowing you to subscribe to news outlets
-                and topics that you want to read, this project implements authorization and
-                authentication, using tools such as Two Factor Authentication and JWT. The
-                technologies used in building it include Angular, Angular Material, TypeScript,
-                Node.js, MySQL, SCSS etc.
               </p>
             </div>
           }
