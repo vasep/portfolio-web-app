@@ -207,7 +207,7 @@ export default ({ data }) => {
             </div>
             <div className="lg:w-1/2 sm:w-auto px-3">
               <Card className="mb-8">
-                <p className="font-semibold text-xl">Education and training</p>
+                <p className="font-semibold text-xl">Education and Training</p>
                 <hr />
                 <ul className="list-edu mt-4 text-left">
                 <li>
@@ -286,14 +286,14 @@ export default ({ data }) => {
             <div className="lg:pr-32 xl:pr-48">
               <h3 className="text-2xl font-semibold leading-tight">FreightOne</h3>
               <p className="mt-2 text-xl font-light leading-relaxed">
-                Mainly done to assist a truck managing software. Made for adnroid and ios. The following core features are included:</p>
+                Mainly done to assist a truck managing software. Made for android and ios. The following core features is included:</p>
               <dl className="mt-2 text-xl font-light leading-relaxed">
                 <dt className="font-semibold">Login Screen:</dt>
-                <dd>Using a unique generated access token to gain access to the backend server.</dd>
+                <dd>Using a unique generated access token to gain access to the server.</dd>
                 <dt className="font-semibold">Dashboard Fragment Tabs:</dt>
-                <dd>Getting a list of items with a GET Request from the server.</dd>
+                <dd>Getting a list of items from the server.</dd>
                 <dt className="font-semibold">Detailed Item Screen:</dt>
-                <dd>Displays information about the selected item. Allows the user to check off their delivery/pick ups, this info is also send to the server.</dd>
+                <dd>Displays information about the selected item. Allows the user to check off their delivery/pick ups, this info is also sent to the server.</dd>
               </dl>
 
               <p className="mt-2 text-xl font-light leading-relaxed">
@@ -315,8 +315,29 @@ export default ({ data }) => {
             <div className="lg:pl-32 xl:pl-48">
               <dl className="mt-2 text-xl font-light leading-relaxed">
                 <dt className="font-semibold">Share PDF Files:</dt>
-                <dd>This feature enables the app to share stored files by a third pary application (Office Lens, Addobe Scanner) through our application and send the selected files to the server.</dd>
+                <dd>This feature enables the app to share stored files from a third party application (Office Lens, Adobe Scanner) through our application and send the selected files to the server.</dd>
               </dl>
+
+              <p className="mt-2 text-xl font-light leading-relaxed">
+                Check it out on{' '}
+                <a
+                  href="https://github.com/vasep/TruckingAndroid"
+                  alt="GitHub Trucking Android"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub/Android
+                </a>
+                {' and '}
+                <a
+                  href="https://github.com/vasep/TruckingiOS"
+                  alt="GitHub Trucking Ios"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub/iOS
+                </a>
+              </p>
             </div>
           }
           secondarySlot={
