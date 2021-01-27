@@ -284,7 +284,7 @@ export default ({ data }) => {
         <SplitSection
           primarySlot={
             <div className="lg:pr-32 xl:pr-48">
-              <h3 className="text-2xl font-semibold leading-tight">FreightOne</h3>
+              <h3 className="text-2xl font-semibold leading-tight">TruckHelper</h3>
               <p className="mt-2 text-xl font-light leading-relaxed">
                 Mainly done to assist a truck managing software. Made for android and ios. The following core features is included:</p>
               <dl className="mt-2 text-xl font-light leading-relaxed">
