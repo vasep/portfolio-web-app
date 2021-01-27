@@ -26,7 +26,7 @@ export default ({ data }) => {
               Vasil Panov
             </h1>
             <h1 className="text-3xl md:text-5xl xl:text-6xl font-bold leading-none">
-              Native Mobile App Developer
+              Mobile Application Developer
             </h1>
             <p className="text-xl lg:text-2xl mt-6 font-light">
               Hi. I'm Vasil, a native mobile app developer based in Strumica, North Macedonia.
@@ -210,6 +210,18 @@ export default ({ data }) => {
                 <p className="font-semibold text-xl">Education and training</p>
                 <hr />
                 <ul className="list-edu mt-4 text-left">
+                <li>
+                  <p className="text-sm">2009 – 2013</p>
+                  <h4>Applied Foreign Languages - AUE FON University</h4>
+                  <a
+                      href="http://aue.edu.eu/schools/school-of-education/applied-linguistics-teaching-stream-ba-intefl-with-foreign-language-b.aspx"
+                      alt="AUE FON University"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Bachelor's degree - English literature
+                    </a>
+                  </li>
                   <li>
                     <p className="text-sm">2018 – 2019</p>
                     <h4>Mobile Development - Adamantus Academy</h4>
@@ -225,6 +237,7 @@ export default ({ data }) => {
                       I spent over 7 months as a trainee learning mobile development technologies such as Java, Swift, Android Studio, and others.
                     </p>
                   </li>
+
                   {/* <hr /> */}
                 </ul>
               </Card>
@@ -257,6 +270,9 @@ export default ({ data }) => {
                   <li>
                     <span>Motivated in developing new skills</span>
                   </li>
+                  <li>
+                    <span>English - Full professional proficiency level</span>
+                  </li>
                 </ul>
               </Card>
             </div>
@@ -268,29 +284,20 @@ export default ({ data }) => {
         <SplitSection
           primarySlot={
             <div className="lg:pr-32 xl:pr-48">
-              <h3 className="text-2xl font-semibold leading-tight">peRSSonified</h3>
+              <h3 className="text-2xl font-semibold leading-tight">FreightOne</h3>
               <p className="mt-2 text-xl font-light leading-relaxed">
-                Check it out on{' '}
-                <a
-                  href="https://github.com/slaveatanasov/perssonified"
-                  alt="GitHub peRSSonified"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-                {' and '}
-                <a
-                  href="https://perssonified.herokuapp.com/"
-                  alt="Heroku peRSSonified"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Heroku
-                </a>
-              </p>
+                Mainly done to assist a truck managing software. Made for adnroid and ios. The following core features are included:</p>
+              <dl className="mt-2 text-xl font-light leading-relaxed">
+                <dt className="font-semibold">Login Screen:</dt>
+                <dd>Using a unique generated access token to gain access to the backend server.</dd>
+                <dt className="font-semibold">Dashboard Fragment Tabs:</dt>
+                <dd>Getting a list of items with a GET Request from the server.</dd>
+                <dt className="font-semibold">Detailed Item Screen:</dt>
+                <dd>Displays information about the selected item. Allows the user to check off their delivery/pick ups, this info is also send to the server.</dd>
+              </dl>
+
               <p className="mt-2 text-xl font-light leading-relaxed">
-                Imagined as a personalized news aggregator allowing you to subscribe to news outlets
+                
               </p>
             </div>
           }
@@ -306,35 +313,10 @@ export default ({ data }) => {
           reverseOrder
           primarySlot={
             <div className="lg:pl-32 xl:pl-48">
-              <h3 className="text-2xl font-semibold leading-tight">
-                From prototype in Photoshop to a complete website
-              </h3>
-              <p className="mt-2 text-xl font-light leading-relaxed">
-                Check it out on{' '}
-                <a
-                  href="https://github.com/slaveatanasov/landing-page-example"
-                  alt="GitHub Landing Page Project"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-                {' and '}
-                <a
-                  href="https://playground-by-slave-atanasov.herokuapp.com/"
-                  alt="Heroku Landing Page Project"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Heroku
-                </a>
-              </p>
-              <p className="mt-2 text-xl font-light leading-relaxed">
-                This slick landing page website was built in Angular from scratch following the
-                design provided in a Photoshop file. It is fully responsive with features such as
-                automatic slideshow, AJAX tabs section, modern cards and banners section, as well as
-                contact form and cookie policy components.
-              </p>
+              <dl className="mt-2 text-xl font-light leading-relaxed">
+                <dt className="font-semibold">Share PDF Files:</dt>
+                <dd>This feature enables the app to share stored files by a third pary application (Office Lens, Addobe Scanner) through our application and send the selected files to the server.</dd>
+              </dl>
             </div>
           }
           secondarySlot={
@@ -351,7 +333,7 @@ export default ({ data }) => {
               <h3 className="text-2xl font-semibold leading-tight">Other projects</h3>
               <p className="mt-2 text-xl font-light leading-relaxed">
                 <a
-                  href="https://github.com/slaveatanasov?tab=repositories"
+                  href="https://github.com/vasep?tab=repositories"
                   alt="GitHub Projects"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -381,14 +363,14 @@ export const query = graphql`
         }
       }
     }
-    perssonified: file(relativePath: { eq: "perssonified_1.jpg" }) {
+    perssonified: file(relativePath: { eq: "freightOne-sample-image.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    landingPageProject: file(relativePath: { eq: "landing-page-project.png" }) {
+    landingPageProject: file(relativePath: { eq: "Etka.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
